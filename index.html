@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pose Detector</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #1a1a1a;
+            overflow: hidden;
+        }
+
+        h1 {
+            font-size: 36px;
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+            text-transform: uppercase;
+            position: relative;
+            animation: glowing 2s infinite;
+        }
+
+        @keyframes glowing {
+            0% {
+                text-shadow: 0 0 5px #ff0000, 0 0 20px #ff0000, 0 0 40px #ff0000;
+            }
+            50% {
+                text-shadow: 0 0 10px #ff0000, 0 0 30px #ff0000, 0 0 50px #ff0000;
+            }
+            100% {
+                text-shadow: 0 0 5px #ff0000, 0 0 20px #ff0000, 0 0 40px #ff0000;
+            }
+        }
+
+        footer {
+            color: #ffffff;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pose Detector</h1>
+    <h1 class="glow">Ojasvi Mittal</h1>
+
+    <footer>Made by Ojasvi Mittal</footer>
+
+    <script src="scipt.js"></script>
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.7.0/lib/p5.js"></script>
+</body>
+</html>
